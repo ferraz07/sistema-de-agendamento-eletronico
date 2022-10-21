@@ -1,0 +1,168 @@
+
+:root {
+    --color-card: #363f5f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+select{
+    position:static;
+    align-content: center;
+    text-align: center;
+    width: 700px;
+    height: 40px;
+    padding: 10px;
+    bottom: 10px;
+    white-space: nowrap;
+    border-width: 0;
+    margin: -1px;
+    border-radius: 1px;
+}
+#formS{
+    display: none;
+}
+#formA{
+    display: none;
+}
+#deDentro{
+    background-color: rgb(72, 110, 235);
+    width: 50%;
+    height: 40px;
+    border-radius: 1px;
+    
+}
+
+html {
+    font-size: 93.75%; /* 15px */
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;   
+}
+
+/* Buttons */
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 700px;
+  height: 40px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  display: none;
+  color: #363f5f;
+}
+.collapsible:hover{
+    opacity: 2;
+}
+
+/* Header */
+
+header {
+    background: var(--color-card);
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+#logoPrincipal{
+    align-self: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+    position:fixed;
+    left: -1px;
+    top: 150px;
+    bottom: 30px;
+    float: left;
+    display: flex;
+}
+#logoP {
+    color: #fff;
+    font-weight: 100;
+    position:fixed;
+    left: -1px;
+    top: 450px;
+    bottom: 30px;
+    float: left;
+    display: flex;
+}
+
+html:not([data-scroll='0']) body {
+    padding-top: 1em;
+}
+
+html:not([data-scroll='25']) #logo {
+    position: fixed;
+    top: 150px;
+    z-index: 1;
+}
+/* Form */
+
+#form  {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: .2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.input-group{
+    margin-top: .8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-group.actions.button,
+.input-group.actions button {
+    width: 48%;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--color-card);
+    opacity: 0.6;
+}
+
+/* Responsive */
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
+        gap: 2rem;
+    }
+}
+

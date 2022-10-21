@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <title>Sistema de Agendamento Eletrônico</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logoMarinha.png" alt="Logo Marinha" id="logoPrincipal" />
+    </header>
+
+    <main class="container">
+        <section id="formPrincipal">
+            <form id="formP">
+                <select name="AgenciaEscolher">
+                    <option selected>SELECIONE A ORGANIZAÇÃO MILITAR EM QUE DESEJA SER ATENDIDO E VEJA AS OPÇÕES</option>
+                    <option>Agencia Fluvial</option>
+                    <option>Agencia da Capitania</option>
+                    <option>Capitania Fluvial</option>
+                    <option>Teste Fluvial</option>
+                    <option>Teste Fluvial</option>
+                    <option>Agencia Fluvial</option>
+                    <option>Agencia Fluvial</option>
+                </select>
+            </form>
+        </section>
+        <br>
+        <section>
+            <div>
+                <form id="formS">
+                    <select name="ServicosEscolher">
+                        <option>SERVIÇOS DISPONÍVEIS E GERAÇÃO DE GRU</option>
+                        <option>AQUAVIARIO - ASCENSAO DE CATEGORIA DE AQUAVIARI</option>
+                        <option>AQUAVIARIO - Homologacao de embarque</option>
+                        <option>AQUAVIARIO - ASCENSAO DE CATEGORIA DE AQUAVIARI</option>
+                        <option>AQUAVIARIO - ASCENSAO DE CATEGORIA DE AQUAVIARI</option>
+                        <option>Teste Fluvial</option>
+                        <option>Teste Fluvial</option>
+                        <option>Teste Fluvial</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <br>
+        <section>
+            <button type="button" class="collapsible" id="formA">AGENDAMENTO PARA ÚNICO CPF/CNPJ</button>
+            <div class="content">
+                <p>Sr.Usuario <br>
+                    Agendamento de serviços, SOMENTE PELO PRÓPRIO INTERESSADO, não deve ser realizado pelo representante legal.</p>
+                    <br>
+                <button id="deDentro">CLIQUE AQUI PARA MARCAR</button>
+            </div>
+        </section>
+        <br>
+        <section>
+            <button type="button" class="collapsible" id="formAa">AGENDAMENTO PARA REPRESENTANTE LEGAL</button>
+            <div class="content">
+                <p>Atenção! <br>
+                Agendamento de serviços, SOMENTE PARA REPRESENTANTE LEGAL.</p>
+                <br>
+                <button id="deDentro">CLIQUE AQUI PARA MARCAR</button>
+            </div>
+        </section>
+        <br>
+        <section>
+            <button type="button" class="collapsible" id="formAaa">ALTERAR DATA E HORA DO AGENDAMENTO</button>
+            <div class="content">
+                <p>Para efetuar o reagendamento, deve ser realizado com ANTECEDÊNCIA DE 24 HORAS, em relação ao dia e ao horário de
+                atendimento, que constam no Comprovante de Agendamento Eletrônico, observando no calendário os dias e horários
+                disponíveis. <br>
+                ATENÇÃO: se este prazo for MENOR QUE 24 HORAS NÃO SERÁ POSSÍVEL.</p>
+                <br>
+                <button id="deDentro">CLIQUE AQUI PARA ALTERAR A DATA DO AGENDAMENTO</button>
+            </div>
+        </section>
+        <br>
+        <section>
+            <button type="button" class="collapsible" id="formAaaa">CANECELAR AGENDAMENTO</button>
+            <div class="content">
+                <p>Deve ser realizado com ANTECEDÊNCIA DE 24 HORAS, em relação ao dia e ao horário de atendimento, que constam no
+                Comprovante de Agendamento Eletrônico. <br>
+                ATENÇÃO: se este prazo for MENOR QUE 24 HORAS NÃO SERÁ POSSÍVEL.</p>
+                <br>
+                <button id="deDentro">CLIQUE AQUI PARA CANCELAR O AGENDAMENTO</button>
+            </div>
+        </section>
+        <br>
+        <section>
+            <button type="button" class="collapsible" id="formAaaaa">RECUPERAR COMPROVANTE DO AGENDAMENTO</button>
+            <div class="content">
+                <p>Válido para efetuar a recuperação do número de agendamento e a chave de confirmação.</p>
+                <br>
+                <button id="deDentro">CLIQUE AQUI PARA RECUPERAR AS INFORMAÇÕES</button>
+            </div>
+        </section>
+            <aside>
+                <img src="./assets/logoSales.png" alt="Logo logoSales" id="logo">
+            </aside>
+            <aside>
+                <img src="./assets/logoPorto.png" alt="Logo logoPortos" id="logoP">
+            </aside>
+    </main>
+
+    <footer>
+        <p>2022© Copyright. Todos os Direitos Reservados.</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
